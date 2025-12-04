@@ -1,12 +1,11 @@
 {
   "@context": "https://w3id.org/openbadges/v2",
   "type": "BadgeClass",
-  "id": "https://your-org.example/badges/library-basics.json",
-  "name": "Library Basics",
-  "description": "Awarded for completing the Library Basics module and quiz.",
-  "image": "https://your-org.example/images/library-basics.png",
+  "id": "https://kekoziar.github.io/fresnoStateLibrary-Badges/badges/library-basics.json",
+  "name": "AI Literacy",
+  "description": "Awarded for completing the AI Literacy tutorial.",
   "criteria": {
-    "narrative": "Completed the Library Basics module and passed the quiz with at least 80%."
+    "narrative": "Completed the AI Literacy tutorial and passed the quiz with at least 80%."
   },
-  "issuer": "https://your-org.example/issuer.json"
+  "issuer": "https://kekoziar.github.io/fresnoStateLibrary-Badges/issuer.json"
 }
