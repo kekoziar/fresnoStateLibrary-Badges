@@ -1,8 +1,8 @@
 {
   "@context": "https://w3id.org/openbadges/v2",
   "type": "Issuer",
-  "id": "https://your-org.example/issuer.json",
+  "id": "https://kekoziar.github.io/fresnoStateLibrary-Badges/issuer.json",
   "name": "Fresno State Library",
-  "url": "https://your-org.example",
+  "url": "https://library.fresnostate.edu",
   "email": "kkoziar@mail.fresnostate.edu"
 }
