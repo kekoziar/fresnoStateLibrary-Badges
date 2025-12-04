@@ -3,6 +3,5 @@
   "type": "Issuer",
   "id": "https://kekoziar.github.io/fresnoStateLibrary-Badges/issuer.json",
   "name": "Fresno State Library",
-  "url": "https://library.fresnostate.edu",
-  "email": "kkoziar@mail.fresnostate.edu"
+  "url": "https://library.fresnostate.edu"
 }
