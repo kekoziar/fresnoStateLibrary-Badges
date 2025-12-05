@@ -1,0 +1,11 @@
+{
+  "@context": "https://w3id.org/openbadges/v2",
+  "type": "BadgeClass",
+  "id": "https://kekoziar.github.io/fresnoStateLibrary-Badges/badges/default-badge.json",
+  "name": "Default Badge for Testing",
+  "description": "Not awarded, but is a default for testing purposes",
+  "criteria": {
+    "narrative": "Completed the DEFAULT tutorial and passed the quiz with at least 80%."
+  },
+  "issuer": "https://kekoziar.github.io/fresnoStateLibrary-Badges/issuer.json"
+}
