@@ -1,0 +1,11 @@
+{
+  "@context": "https://w3id.org/openbadges/v2",
+  "type": "BadgeClass",
+  "id": "https://kekoziar.github.io/fresnoStateLibrary-Badges/badges/plag1.json",
+  "name": "Preventing Plagiarism",
+  "description": "Awarded for completing the Preventing Plagiarism tutorial.",
+  "criteria": {
+    "narrative": "Completed the Preventing Plagiarism tutorial and passed the quiz with at least 80%."
+  },
+  "issuer": "https://kekoziar.github.io/fresnoStateLibrary-Badges/issuer.json"
+}
