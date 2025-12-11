@@ -1,7 +1,7 @@
 {
   "@context": "https://w3id.org/openbadges/v2",
   "type": "Assertion",
-  "id": "https://script.google.com/a/mail.fresnostate.edu/macros/s/AKfycbwaUU0pnROjFGTon-_fgNGIk7rN26hJmF4YGNvgqwuA6PyhRzDehhqQAIiEhur_9F3W/exec?id=hPhYIahU8PM0KGt",
+  "id": "https://script.google.com/a/mail.fresnostate.edu/macros/s/AKfycbwaUU0pnROjFGTon-_fgNGIk7rN26hJmF4YGNvgqwuA6PyhRzDehhqQAIiEhur_9F3W/exec?id=TEST",
   "recipient": {
     "type": "email",
     "identity": "mailto:kkoziar@mail.fresnostate.edu",
