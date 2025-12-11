@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Apps Script JSON Viewer</title>
+  <style>
+    body { font-family: system-ui, sans-serif; padding: 1rem; }
+    pre { background: #f4f4f4; padding: 1rem; border-radius: 4px; }
+    .error { color: darkred; }
+  </style>
+</head>
+<body>
+  <h1>Apps Script JSON Result</h1>
+  <div id="status">Loading…</div>
+  <pre id="output"></pre>
+
+  <script>
+    // 1. Read ?id=... from the GitHub Pages URL
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get('id');
+
+    const statusEl = document.getElementById('status');
+    const outputEl = document.getElementById('output');
+
+    if (!id) {
+      statusEl.textContent = 'No "id" parameter provided in the URL.';
+    } else {
+      statusEl.textContent = 'Fetching data for id="' + id + '"…';
+
+      // 2. Build the Apps Script URL
+      const scriptUrl = 'https://script.google.com/macros/s/AKfycbwaUU0pnROjFGTon-_fgNGIk7rN26hJmF4YGNvgqwuA6PyhRzDehhqQAIiEhur_9F3W/exec?id='
+        + encodeURIComponent(id);
+
+      // 3. Call your Apps Script web app
+      fetch(scriptUrl)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('HTTP ' + response.status);
+          }
+          return response.json();
+        })
+        .then(data => {
+          statusEl.textContent = 'Success!';
+          outputEl.textContent = JSON.stringify(data, null, 2);
+        })
+        .catch(err => {
+          statusEl.textContent = 'Error fetching data';
+          statusEl.classList.add('error');
+          outputEl.textContent = err.toString();
+        });
+    }
+  </script>
+</body>
+</html>
