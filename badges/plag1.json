@@ -4,6 +4,7 @@
   "id": "https://kekoziar.github.io/fresnoStateLibrary-Badges/badges/plag1.json",
   "name": "Preventing Plagiarism",
   "description": "Awarded for completing the Preventing Plagiarism tutorial.",
+  "image": "http://kekoziar.github.io/fresnoStateLibrary-Badges/img/plag1.png",
   "criteria": {
     "narrative": "Completed the Preventing Plagiarism tutorial and passed the quiz with at least 80%."
   },
