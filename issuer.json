@@ -3,5 +3,10 @@
   "type": "Issuer",
   "id": "https://kekoziar.github.io/fresnoStateLibrary-Badges/issuer.json",
   "name": "Fresno State Library",
-  "url": "https://library.fresnostate.edu"
+  "url": "https://library.fresnostate.edu", 
+  "allowedOrigins": [
+  "https://script.google.com/a/mail.fresnostate.edu/macros/s/AKfycbwaUU0pnROjFGTon-_fgNGIk7rN26hJmF4YGNvgqwuA6PyhRzDehhqQAIiEhur_9F3W",
+  "https://kekoziar.github.io"
+]
+
 }
