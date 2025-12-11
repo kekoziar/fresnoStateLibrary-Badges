@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <script>
+    // Force the document to behave like a JSON document
+    document.addEventListener("DOMContentLoaded", () => {
+      const pre = document.getElementById("json");
+      const params = new URLSearchParams(window.location.search);
+      const id = params.get("id");
+
+      // Set MIME type to JSON
+      const meta = document.createElement("meta");
+      meta.httpEquiv = "Content-Type";
+      meta.content = "application/json; charset=utf-8";
+      document.head.appendChild(meta);
+
+      if (!id) {
+        pre.textContent = JSON.stringify({ error: "Missing ?id parameter" }, null, 2);
+        return;
+      }
+
+      const url =
+        'https://script.google.com/macros/s/AKfycbwaUU0pnROjFGTon-_fgNGIk7rN26hJmF4YGNvgqwuA6PyhRzDehhqQAIiEhur_9F3W/exec?id=' +
+        encodeURIComponent(id);
+
+      fetch(url)
+        .then((r) => r.json())
+        .then((data) => {
+          pre.textContent = JSON.stringify(data, null, 2);
+        })
+        .catch((err) => {
+          pre.textContent = JSON.stringify({ error: err.toString() }, null, 2);
+        });
+    });
+  </script>
+</head>
+<body>
+<pre id="json"></pre>
+</body>
+</html>
