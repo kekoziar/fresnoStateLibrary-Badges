@@ -1,0 +1,22 @@
+{
+  "@context": "https://w3id.org/openbadges/v2",
+  "type": "Assertion",
+  "id": "https://script.google.com/a/mail.fresnostate.edu/macros/s/AKfycbwaUU0pnROjFGTon-_fgNGIk7rN26hJmF4YGNvgqwuA6PyhRzDehhqQAIiEhur_9F3W/exec?id=hPhYIahU8PM0KGt",
+  "recipient": {
+    "type": "email",
+    "identity": "mailto:kkoziar@mail.fresnostate.edu",
+    "hashed": false
+  },
+  "issuedOn": "2025-12-11T18:25:58.705Z",
+  "verification": {
+    "type": "HostedBadge",
+    "allowedOrigins": [
+      "https://script.google.com",
+      "https://kekoziar.github.io"
+    ]
+  },
+  "badge": "https://kekoziar.github.io/fresnoStateLibrary-Badges/badges/plag1.json",
+  "name": "Plagiarism Prevention",
+  "recipientName": "TEST",
+  "narrative": "Awarded to TEST for completing Plagiarism Prevention."
+}
