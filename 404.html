@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="Content-Type" content="application/json; charset=utf-8">
+</head>
+<body>
+<pre id="json"></pre>
+<script>
+  const pre = document.getElementById("json");
+
+  // Path example: /repo/page/UNIQUE.json
+  const path = window.location.pathname;
+
+  // Extract the last part (UNIQUE.json)
+  const lastPart = path.split('/').filter(Boolean).pop();
+
+  // Remove .json if present
+  const id = lastPart.replace(/\.json$/, "");
+
+  if (!id) {
+    pre.textContent = JSON.stringify({ error: "Missing ID" }, null, 2);
+  } else {
+    const url =
+      "https://script.google.com/macros/s/AKfycbwaUU0pnROjFGTon-_fgNGIk7rN26hJmF4YGNvgqwuA6PyhRzDehhqQAIiEhur_9F3W/exec?id=" +
+      encodeURIComponent(id);
+
+    fetch(url)
+      .then((r) => r.json())
+      .then((data) => {
+        pre.textContent = JSON.stringify(data, null, 2);
+      })
+      .catch((err) => {
+        pre.textContent = JSON.stringify(
+          { error: err.toString() },
+          null,
+          2
+        );
+      });
+  }
+</script>
+</body>
+</html>
