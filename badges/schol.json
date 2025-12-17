@@ -1,0 +1,12 @@
+{
+@context: "https://w3id.org/openbadges/v2",
+type: "BadgeClass",
+id: "https://kekoziar.github.io/fresnoStateLibrary-Badges/badges/schol.json",
+name: "Scholarly Articles",
+description: "Awarded for completing the Scholarly Articles tutorial.",
+image: "https://kekoziar.github.io/fresnoStateLibrary-Badges/img/schol.png",
+criteria: {
+narrative: "Completed the Scholarly Articles tutorial and passed the quiz with at least 80%.",
+},
+issuer: "https://kekoziar.github.io/fresnoStateLibrary-Badges/issuer.json"
+}
