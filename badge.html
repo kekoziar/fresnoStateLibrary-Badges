@@ -41,7 +41,7 @@
           return response.json();
         })
         .then(data => {
-          statusEl.textContent = 'Success!';
+          statusEl.textContent = 'Information successfully retrieved!';
           outputEl.textContent = JSON.stringify(data, null, 2);
         })
         .catch(err => {
