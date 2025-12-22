@@ -41,6 +41,17 @@
           return response.json();
         })
         .then(data => {
+          // adding new here
+             // If Apps Script returned a JSON string containing JSON, parse it again
+        if (typeof data === 'string') {
+          data = JSON.parse(data);
+        }
+
+        // If your API returns {error: "..."} even with 200, treat as error
+        if (data && typeof data === 'object' && data.error) {
+          throw new Error(data.error);
+        }
+          // end add new
           statusEl.textContent = 'Information successfully retrieved!';
           outputEl.textContent = JSON.stringify(data, null, 2);
         })
